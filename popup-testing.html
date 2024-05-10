@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: https://ogp.me/ns#">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Popup Testing</title>
+
+   
+<link rel="stylesheet" href="./css/style.css">
+<meta name="theme-color" content="#5e81ac" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#bf616a" media="(prefers-color-scheme: dark)">
+</head>
+
+<body>
+
+<!-- site-nav.html -->
+<nav class="[ style-box ]">
+	<menu class="style-box">
+		<li><a href="index.html" title="Labarum Test Site">Home</a></li>
+		<li><a href="http://localhost:1313/feed.xml" rel="feed" type="application/rss+xml" title="Labarum Test Site">RSS</a></li>
+	</menu>
+</nav>
+
+
+<main>
+
+<!-- _default/single.html -->
+
+<article class="post h-entry hentry style-box">
+<header class="post-header">
+<h1><a href="#" class="p-name">Popup testing</a></h1>
+</header>
+
+<div class="e-content post-body">
+<p>This spot left empty</p>
+<button popovertarget="my-popover" class="trigger-btn">Open Popover</button>
+
+<p>Another paragraph with a button<button popovertarget="second-pop" class="trigger-btn">Second Popover</button> in the middle of it.</p>
+
+<div id="my-popover" popover=auto>
+	<p>I'm a popver with more information</p>
+</div>
+
+<aside id="second-pop" popover=auto>Something else is here.</aside>
+
+
+<p>A third paragraph with a button<button popovertarget="third-pop" class="trigger-btn">Third Popover</button> in the middle of it. This is some more text just to pad this out a little bit more.</p>
+
+<aside id="third-pop" popover=auto>
+<p>I am a popover with more information. Hit the close button or toggle to close me.<p>
+  <button class="close-btn" popovertarget="third-pop" popovertargetaction="hide">
+    <span aria-hidden="true">❌</span>
+    <span class="sr-only">Close</span>
+  </button></aside>
+
+</div>
+
+<!-- article-footer.html -->
+<footer id="post-meta">
+	<p class="left-column">Categories:
+	
+		<a href="#" class="p-category">
+			<span itemprop="articleSection">Category1</span></a>
+		
+	</p>
+	
+	<p class="right-column">
+		<a href="#" class="u-url">
+		<time class="dt-publised" itemprop="dateCreated datePublished"
+			datetime="2023-03-29T19:47:01-07:00">March 29, 2023
+		</time>
+		</a>
+	</p>
+		
+
+			
+</footer>
+
+
+</article>
+
+</main>
+
+
+<footer class="style-box">
+
+<aside itemprop="author" itemscope itemtype="https://schema.org/Person" 
+    class="[ author ] [ h-card ] [ p-author ]" 
+    
+    role="contentinfo">
+    <div class="[ author-image ]">
+	    <img class="[ u-photo ]" loading="lazy" itemprop="image"
+	        src="images/avatar.jpg"
+	        alt="Profile image of Mandaris Moore"/>	
+        <p itemprop="name" class="[ p-name ] [ text-center ]">Mandaris Moore</p>
+    </div>
+	<div class="[ author-bio ] [ bio ] [ p-note ]">
+        [DESCRIPTION]: A High-quality stranger. I've considered myself a digital gofer. Y'know, go for this and go for that. I'm using micro.blog now to par down my technical projects and be part of an outstanding community.
+    </div>
+</aside>
+    <p class="[ text-center ]">Follow <a href="https://micro.blog/mandaris">Mandaris on Micro.blog</a>.</p>
+    <p class="[ text-center ]">
+    &copy; 2024. All rights reserved.</p>
+</footer>
+
+
+</body>
+
+</html>
